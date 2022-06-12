@@ -817,6 +817,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100%;
 }
 
+.max-h-10 {
+  max-height: 2.5rem;
+}
+
+.max-h-32 {
+  max-height: 8rem;
+}
+
+.max-h-48 {
+  max-height: 12rem;
+}
+
 .w-full {
   width: 100%;
 }
@@ -895,6 +907,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-lg {
   max-width: 32rem;
+}
+
+.max-w-\[800px\] {
+  max-width: 800px;
+}
+
+.max-w-\[700px\] {
+  max-width: 700px;
+}
+
+.max-w-\[740px\] {
+  max-width: 740px;
+}
+
+.max-w-\[730px\] {
+  max-width: 730px;
 }
 
 .flex-shrink-0 {
@@ -1035,6 +1063,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-space-x-reverse: 0;
   margin-right: calc(3rem * var(--tw-space-x-reverse));
   margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .divide-y-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1340,6 +1374,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-size: cover;
 }
 
+.bg-center {
+  background-position: center;
+}
+
 .fill-pink-500 {
   fill: #ec4899;
 }
@@ -1366,6 +1404,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .fill-green-500 {
   fill: #22c55e;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-8 {
